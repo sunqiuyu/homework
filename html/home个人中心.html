@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/地板.png">
+    <title>home+个人中心</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" href="../css/personal-center.css">
+</head>
+<body>
+    <!--头部 head start -->
+    <div class="head">
+            <img src="../images/logo.png" alt="">
+    </div>
+    <div class="outside-nav">
+        <div class="nav">
+            <div class="nav-left">
+                <span><img src="../images/location.png" alt=""></span>
+                <a href="#">深圳</a>
+                <a href="#"> <切换> </a>
+            </div>
+            <div class="nav-wrap">
+                <a href="#">首页</a>
+                <a href="#">资讯</a>
+                <a href="#">测评</a>
+                <a href="#">商城</a>
+            </div>
+            <div class="nav-right">
+                 <span><img src="../images/adm1.PNG" alt=""></span>
+                 <a href="#" class="own">个人中心</a>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 head end -->
+    <div class="container">
+        <!-- 侧边栏 strat -->
+        <div class="user">
+               <p><a  href="./homecenter.html/user-firstpage.html" target="frame">用户中心首页</a></p>
+        </div>
+        <ul class="list-nav">
+            <li class="first">
+               <p><img src="../images/open.png" alt=""><span>我的检测</span></p>
+               <p><a href="#">上门检测</a></p>
+               <p> <a href="#">&nbspDIY检测</a></p>
+            </li>
+            <li>
+                <p><img src="../images/open.png" alt=""><span>我的治理</span></p>
+                <a href="#">上门治理</a>
+            </li>
+            <li>
+                <p><img src="../images/open.png" alt=""><span>我的装修</span></p>
+                <a href="#">装修方案</a>
+            </li>
+            <li>
+                <p><img src="../images/open.png" alt=""><span>我的收藏</span></p>
+                <a href="#">装修材料</a>
+                <a href="#">净化产品</a>
+                <a href="#">资讯</a>
+                <a href="#">测评</a>
+            </li>
+            <li>
+                <p><img src="../images/open.png" alt=""><span>个人资料</span></p>
+                <a href="#">个人资料</a>
+                <a href="#">修改密码</a>
+                <a href="./homecenter.html/bind-account.html" target="frame">绑定手机\微信</a>
+            </li>
+            <li>
+                <p><img src="../images/open.png" alt=""><span>积分管理</span></p>
+                <a href="#">积分兑换</a>
+                <a href="#">积分等级</a>
+                <a href="#">积分任务</a>
+            </li>
+        </ul>
+        <!-- 侧边栏 end -->
+
+        <iframe class="homepage" src="../html/homecenter.html/user-firstpage.html" framebodr="0" name="frame">
+            <!-- <div class="title"></div>
+            <div class="article"></div> -->
+        </iframe>
+    </div>
+    <div class="bottom">
+        <div class="container">            
+            <div class="footer">
+                <img src="../images/footerLogo.png" alt="">
+            </div>
+            <div class="home">
+                <p class="health"><strong>为室内环境健康把好每一关</strong></p>
+                <p>家居医生致力于中国人的家具健康问题，通过专业的技术研究</p>
+                <p>和测评，倾力协助大众打造绿色、环保的人居生活环境。</p>
+            </div>
+            <div class="about">
+                <p><span>关于我们</span><span>版权说明</span></p>
+                <p><span>联系我们</span><span>联系我们</span></p>
+                <p><span>加入我们</span><span>加入我们</span></p>
+            </div>
+            <div class="shop">
+                 <li><img src="../images/weixin2.png" alt="">&nbsp&nbsp&nbsp官方微信</li>
+                 <li><img src="../images/tianmao.png" alt="">&nbsp&nbsp&nbsp&nbsp天猫旗舰店</li>
+                 <li><img src="../images/shop.png" alt="">&nbsp&nbsp&nbsp 有赞商城</li>
+            </div> 
+            <div class="underline"></div>  
+                <div class="foot">
+                    <span>深圳建筑科学研究院股份有限公司  </span>
+                     <span>   家居医生网</span>   
+                     <span class="area"> 粤ICP备08011321 ©Copyright All rights reserved</span>                
+            </div>            
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $(".container").find("a").click(function(e){
+                $(".container a").removeClass("active");
+                $(this).addClass("active")
+            })
+        })
+    </script>
+</body>
+</html>
